@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width">
+    <title>Register and Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/Login.css">
+</head>
+<body>
+
+    <!---REGISTER PART-->
+    <div class="container" id="signup">
+        <h1 class="form-title">ลงทะเบียน</h1>
+        <form method="post" action="">
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" name="fName" id="fname" placeholder="ชื่อจริง" required>
+                <label for="fname">ชื่อจริง</label>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" name="lName" id="lname" placeholder="นามสกุล" req uired>
+                <label for="fname">นามสกุล</label>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <label for="fname">อีเมล</label>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="password" id="password" placeholder="รหัสผ่าน" required>
+                <label for="fname">รหัสผ่าน</label>
+            </div>
+<!---ข้อกำหนดการใช้งาน-->
+<br></br>
+            <div class="checkbox-container"> 
+                <input type="checkbox" required><label for="agree">ฉันยอบนับเงื่อนไขการใช้งาน</label>
+            </div>
+            <a href="privacy.html" ><i class="fa fa-user"></i> ข้อกำหนดการใช้งาน</a>
+
+<!---ข้อกำหนดการใช้งาน-->         
+<br></br>   
+
+            <input type="submit" class="btn" value="ลงทะเบียน" name="signUp">
+        </form>
+        <p class="or">
+            ----------หรือ----------
+        </p>
+        <div class="icons">
+            <i class="fab fa-google"></i>
+            <i class="fab fa-facebook"></i>
+        </div>
+        <div class="links">
+            <p>มีรหัสอยู่แล้ว?</p>
+            <button id="signInButton">เข้าสู่ระบบ</button>
+        </div>
+    </div>
+
+    <!---LOGIN PART-->
+    <div class="container" id="signup">
+        <h1 class="form-title">เข้าสู่ระบบ</h1>
+        <form method="post" action="">
+            <div class="input-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <label for="fname">อีเมล</label>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="password" id="password" placeholder="รหัสผ่าน" required>
+                <label for="fname">รหัสผ่าน</label>
+            </div>
+            <p class="recover">
+                <a href="#">ลืมรหัสผ่าน?</a>
+            </p>
+            <input type="submit" class="btn" value="เข้าสู่ระบบ" name="SignIn">
+        </form>
+        <p class="or">
+            ----------หรือ----------
+        </p>
+        <div class="icons">
+            <i class="fab fa-google"></i>
+            <i class="fab fa-facebook"></i>
+        </div>
+        <div class="links">
+            <p>ยังไม่มีบัญชีที?</p>
+            <button id="signUpButton">ลงทะเบียน</button> 
+        </div>
+    </div>
+</body>
+</html>  
